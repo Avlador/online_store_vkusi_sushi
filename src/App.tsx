@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import { Home } from './pages/Home'
+import { CartBasket } from './pages/basket'
 function App() {
 
   return (
@@ -7,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/' element={<div>Оформление заказа</div>}/>
+          <Route path='/cart' element={<CartBasket />}/>
         </Routes>
       </BrowserRouter>
     </>
@@ -15,3 +16,4 @@ function App() {
 }
 
 export default App
+  
