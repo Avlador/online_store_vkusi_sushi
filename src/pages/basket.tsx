@@ -33,7 +33,8 @@ export function CartBasket(){
                 padding:'40px',
                 display:'flex',
                 flexDirection:'column',
-                alignItems:'center'}}>
+                alignItems:'center',
+                width:"100%"}}>
                 <h1> Корзина</h1>
                 {cartItem.length === 0 ? (<p style={{marginTop:'20px', fontSize:'18px'}}>Ваша корзина пуста</p>) : (
                     <div style={{width:'100%', maxWidth:'600px', marginTop:'20px'}}>
@@ -80,7 +81,7 @@ export function CartBasket(){
                         </div>
                         <button onClick={() => alert('Заказ на сумму ${totalPrice} р. оформлен')} style={{
                             width:'100%',
-                            margin:'20px',
+                            marginTop:'20px',
                             padding:'15px',
                             backgroundColor:'#4caf50',
                             color:'white',
