@@ -22,7 +22,8 @@ export function CartBasket(){
                     padding:"10px 15px",
                     backgroundColor:'white',
                     color:'#ff5722',
-                    fontWeight:'bold'
+                    fontWeight:'bold',
+                    cursor:'pointer'
                 }}>
                     Меню
                 </button>
@@ -52,9 +53,45 @@ export function CartBasket(){
                                 {item.price} р. x <strong>{item.quantity} шт.</strong>
                                 </p>
                             </div>
-                            
+                            <button onClick={() => delit(item.id)} style={{
+                                backgroundColor:'#ff5252',
+                                color:'white',
+                                border:'none',
+                                padding:'8px 12px',
+                                borderRadius:'4px',
+                                cursor:'pointer',
+                                margin:'10px'
+                            }}>
+                                Удалить
+                            </button>
                             </div>
                         ))}
+                        <div style={{
+                            marginTop:'20px',
+                            padding:'20px',
+                            backgroundColor:'#e0f7fa',
+                            borderRadius:'8px',
+                            display:'flex',
+                            justifyContent:'space-between',
+                            alignItems:'center'
+                        }}>
+                            <h2>Итого</h2>
+                            <h2 style={{color:'#ff5222', margin:'0'}}>{totalPrice}p.</h2>
+                        </div>
+                        <button onClick={() => alert('Заказ на сумму ${totalPrice} р. оформлен')} style={{
+                            width:'100%',
+                            margin:'20px',
+                            padding:'15px',
+                            backgroundColor:'#4caf50',
+                            color:'white',
+                            borderRadius:'8px',
+                            cursor:'pointer',
+                            fontSize:'18px',
+                            border:'none',
+
+                        }}>
+                            Оформить заказ
+                        </button>
                     </div>
                 ) }  
             </div>

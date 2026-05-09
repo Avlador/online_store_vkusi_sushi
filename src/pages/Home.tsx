@@ -23,7 +23,8 @@ export function Home () {
                 height:'50px', 
                 borderRadius:'13px',
                 border:'0', 
-                margin:'20px' }} onClick={() => alert('registr')}>
+                margin:'20px',
+                cursor:'pointer' }} onClick={() => alert('registr')}>
                 <img src ={iconRegistr} alt="registr"  width={30} height={30} style={{margin:'13px'}}/>
             </button>
             <Link to='/cart'>
@@ -32,7 +33,8 @@ export function Home () {
                 border:'0px',
                 borderRadius:'13px',
                 width:'50px',
-                height:'50px'}}>
+                height:'50px',
+                cursor:'pointer'}}>
                 <img src ={cardIcon} alt="Описание картинки" width= {30} height={30} style={{margin:'3px'}} /> <strong style={{display:'flex', justifyContent:'center',width:'20px', height:'20px', background:'red', borderRadius:'13px', alignItems:'center', color:'white', fontSize:'12px'}}>{totalQuantity}</strong>
             </button> 
             
