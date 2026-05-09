@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 const MENU = [
-    {id: '1', title:'Рол филодельфия', price: 450},
-    {id: '2', title:'Пица пеперони', price: 550},
+    {id: '1', title:'Ролл филодельфия', price: 450},
+    {id: '2', title:'Пицца пеперони', price: 550},
     {id: '3', title:'Суп том ям', price: 550},
 
 
